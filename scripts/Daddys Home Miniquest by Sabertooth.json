@@ -1,0 +1,3721 @@
+{
+  "sleep": "88",
+  "name": "Daddy\u0027s Home Miniquest",
+  "version": 1.0,
+  "metadata": {
+    "network-id": "62",
+    "network-downloaded-at": "1721665237698"
+  },
+  "actions": [
+    {
+      "id": "CORE",
+      "properties": {
+        "Sleep Between Runs (ms)": "88",
+        "Version": "1.0",
+        "Name": "Daddy\u0027s Home"
+      },
+      "children": [
+        {
+          "id": "DISABLE_BREAKS"
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "Pre-Supply Check"
+          },
+          "children": [
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Hammer"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Hammer",
+                                "Price": "1000",
+                                "Amount": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Saw"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Saw",
+                                "Price": "1000",
+                                "Amount": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Lumberyard teleport"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Lumberyard teleport",
+                                "Price": "10000",
+                                "Amount": "2"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Plank"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Plank",
+                                "Price": "750",
+                                "Amount": "10"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Bolt of cloth"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Bolt of cloth",
+                                "Price": "1250",
+                                "Amount": "5"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "COLLECT_TO_BANK_GRAND_EXCHANGE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                },
+                                {
+                                  "id": "OPEN_BANK",
+                                  "children": [
+                                    {
+                                      "id": "SLEEP_WHILE_MOVING",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Copper ore"
+                                        },
+                                        "Amount": "4"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Iron ore"
+                                        },
+                                        "Amount": "2"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Clay"
+                                        },
+                                        "Amount": "6"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_INVENTORY_DOES_NOT_CONTAIN_ANY",
+              "properties": {
+                "Filter Item By": {
+                  "class": "Item",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Steel nails"
+                }
+              },
+              "children": [
+                {
+                  "id": "OPEN_GRAND_EXCHANGE",
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "900"
+                      },
+                      "children": [
+                        {
+                          "id": "IF_GRAND_EXCHANGE_IS_OPEN",
+                          "children": [
+                            {
+                              "id": "BUY_ITEM_GRAND_EXCHANGE",
+                              "properties": {
+                                "Item Name": "Steel nails",
+                                "Price": "50",
+                                "Amount": "100"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "COLLECT_TO_BANK_GRAND_EXCHANGE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "2800",
+                                    "Variance": "600"
+                                  }
+                                },
+                                {
+                                  "id": "OPEN_BANK",
+                                  "children": [
+                                    {
+                                      "id": "SLEEP_WHILE_MOVING",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_DEPOSIT_ALL"
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Lumberyard teleport"
+                                        },
+                                        "Amount": "2"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Varrock teleport"
+                                        },
+                                        "Amount": "5"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Saw"
+                                        },
+                                        "Amount": "1"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Hammer"
+                                        },
+                                        "Amount": "1"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Plank"
+                                        },
+                                        "Amount": "10"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Bolt of cloth"
+                                        },
+                                        "Amount": "5"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "BANK_WITHDRAW_ITEM",
+                                      "properties": {
+                                        "Filter Item By": {
+                                          "class": "Item",
+                                          "logic": "NONE",
+                                          "type": "NAME",
+                                          "operator": "EQUALS",
+                                          "value": "Steel nails"
+                                        },
+                                        "Amount": "100"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "2800",
+                                            "Variance": "600"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "GO_TO_LABEL",
+                                  "properties": {
+                                    "Label": "Daddy\u0027s Home Start"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "Daddy\u0027s Home Start"
+          },
+          "children": [
+            {
+              "id": "IF_DISTANCE_TO_TILE_IS",
+              "properties": {
+                "distance": {
+                  "class": "Number",
+                  "operator": "GREATER_THAN_OR_EQUALS",
+                  "value": "6"
+                },
+                "Tile": "(3238, 3472, 0)"
+              },
+              "children": [
+                {
+                  "id": "WALK_TO_TILE",
+                  "properties": {
+                    "Tile": "(3238, 3472, 0)"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "3800",
+                        "Variance": "900"
+                      }
+                    },
+                    {
+                      "id": "GO_TO_LABEL",
+                      "properties": {
+                        "Label": "Daddy\u0027s Home Start"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_VARIABLE_IS_NOT",
+              "properties": {
+                "Filter Value By": {
+                  "class": "Variable",
+                  "logic": "NONE",
+                  "type": "AS_TEXT",
+                  "operator": "EQUALS",
+                  "value": "0"
+                },
+                "Variable name": "Job"
+              },
+              "children": [
+                {
+                  "id": "GO_TO_LABEL",
+                  "properties": {
+                    "Label": "The End"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "Marlo\u0027s Dialogue"
+          },
+          "children": [
+            {
+              "id": "NPC_INTERACT",
+              "properties": {
+                "Force left click": false,
+                "Action": "Talk-to",
+                "Filter NPC By": {
+                  "class": "NPC",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Marlo",
+                  "filters": [
+                    {
+                      "class": "NPC",
+                      "logic": "OR",
+                      "type": "ID",
+                      "operator": "EQUALS",
+                      "value": "10429"
+                    }
+                  ]
+                }
+              },
+              "children": [
+                {
+                  "id": "SLEEP_WHILE_MOVING"
+                },
+                {
+                  "id": "SLEEP_UNTIL_GAME_TICK"
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "1980",
+                    "Variance": "480"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "2"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "980",
+                            "Variance": "280"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "1980",
+                                "Variance": "380"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_OPTIONS_ARE_AVAILABLE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "980",
+                            "Variance": "280"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "3"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "Begin Movement"
+          },
+          "children": [
+            {
+              "id": "IF_FIRST_RUN",
+              "children": [
+                {
+                  "id": "CREATE_LABEL",
+                  "properties": {
+                    "Label": "Woodwaxed Return"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "IF_DISTANCE_TO_TILE_IS",
+              "properties": {
+                "distance": {
+                  "class": "Number",
+                  "operator": "GREATER_THAN_OR_EQUALS",
+                  "value": "6"
+                },
+                "Tile": "(3238, 3390, 0)"
+              },
+              "children": [
+                {
+                  "id": "WALK_TO_TILE",
+                  "properties": {
+                    "Tile": "(3238, 3390, 0)"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "2800",
+                        "Variance": "900"
+                      }
+                    },
+                    {
+                      "id": "GO_TO_LABEL",
+                      "properties": {
+                        "Label": "Begin Movement"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IF_VARIABLE_IS_NOT",
+              "properties": {
+                "Filter Value By": {
+                  "class": "Variable",
+                  "logic": "NONE",
+                  "type": "AS_TEXT",
+                  "operator": "EQUALS",
+                  "value": "0"
+                },
+                "Variable name": "Woodwaxed"
+              },
+              "children": [
+                {
+                  "id": "IF_GAME_OBJECT_EXISTS",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Door",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "ID",
+                          "operator": "EQUALS",
+                          "value": "11780"
+                        },
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "TILE",
+                          "operator": "EQUALS",
+                          "value": "(3239, 3391, 0)"
+                        }
+                      ]
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "GAME_OBJECT_INTERACT",
+                      "properties": {
+                        "Don\u0027t walk to object": false,
+                        "Action": "Open",
+                        "Filter Object By": {
+                          "class": "GameObject",
+                          "logic": "NONE",
+                          "type": "NAME",
+                          "operator": "EQUALS",
+                          "value": "Door",
+                          "filters": [
+                            {
+                              "class": "GameObject",
+                              "logic": "AND",
+                              "type": "ID",
+                              "operator": "EQUALS",
+                              "value": "11780"
+                            },
+                            {
+                              "class": "GameObject",
+                              "logic": "AND",
+                              "type": "TILE",
+                              "operator": "EQUALS",
+                              "value": "(3239, 3391, 0)"
+                            }
+                          ]
+                        },
+                        "Force left click": false
+                      },
+                      "children": [
+                        {
+                          "id": "WALK_TO_TILE",
+                          "properties": {
+                            "Tile": "(3238, 3394, 0)"
+                          }
+                        },
+                        {
+                          "id": "SLEEP_WHILE_MOVING"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GO_TO_LABEL",
+                  "properties": {
+                    "Label": "Get to work"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "Old Man Yarlo\u0027s House"
+          },
+          "children": [
+            {
+              "id": "IF_GAME_OBJECT_EXISTS",
+              "properties": {
+                "Filter Object By": {
+                  "class": "GameObject",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Door",
+                  "filters": [
+                    {
+                      "class": "GameObject",
+                      "logic": "AND",
+                      "type": "ID",
+                      "operator": "EQUALS",
+                      "value": "11780"
+                    },
+                    {
+                      "class": "GameObject",
+                      "logic": "AND",
+                      "type": "TILE",
+                      "operator": "EQUALS",
+                      "value": "(3239, 3391, 0)"
+                    }
+                  ]
+                }
+              },
+              "children": [
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Don\u0027t walk to object": false,
+                    "Action": "Open",
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Door",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "ID",
+                          "operator": "EQUALS",
+                          "value": "11780"
+                        },
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "TILE",
+                          "operator": "EQUALS",
+                          "value": "(3239, 3391, 0)"
+                        }
+                      ]
+                    },
+                    "Force left click": true
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "WALK_TO_TILE",
+                      "properties": {
+                        "Tile": "(3238, 3394, 0)"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_WHILE_MOVING"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Dialogue"
+              },
+              "children": [
+                {
+                  "id": "NPC_INTERACT",
+                  "properties": {
+                    "Action": "Talk-to",
+                    "Filter NPC By": {
+                      "class": "NPC",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Old Man Yarlo"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "450",
+                                "Variance": "75"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "What brings you here, young man?",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "250",
+                    "Variance": "50"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "Marlo sent me to fix your furniture",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "250",
+                    "Variance": "50"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "My boy marlo sent you?",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "250",
+                    "Variance": "50"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "Two stools, two tables, a chair, and a rotten carpet. A bed too.",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "250",
+                    "Variance": "50"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "Catch Dialogue",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Demolition crew"
+              },
+              "children": [
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Broken chair",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3245, 3396, 0),(3245, 3390, 0),(3238, 3390, 0),(3238, 3397, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Demolish"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "680",
+                            "Variance": "180"
+                          },
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "680",
+                                "Variance": "180"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Rotten carpet",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3243, 3396, 0),(3243, 3390, 0),(3236, 3390, 0),(3236, 3397, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Remove"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "680",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Broken stool",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3243, 3397, 0),(3243, 3391, 0),(3236, 3391, 0),(3236, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Demolish"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "680",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Broken stool",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3248, 3397, 0),(3248, 3391, 0),(3241, 3391, 0),(3241, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Demolish"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "680",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Broken table",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3249, 3397, 0),(3249, 3391, 0),(3242, 3391, 0),(3242, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Demolish"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "880",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Broken table",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3244, 3397, 0),(3244, 3391, 0),(3237, 3391, 0),(3237, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Demolish"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "780",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Campbed",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3245, 3400, 0),(3245, 3394, 0),(3238, 3394, 0),(3238, 3401, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Remove"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "1680",
+                                "Variance": "180"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "680",
+                                    "Variance": "180"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Old Man Yarlo Again"
+              },
+              "children": [
+                {
+                  "id": "NPC_INTERACT",
+                  "properties": {
+                    "Action": "Talk-to",
+                    "Filter NPC By": {
+                      "class": "NPC",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Old Man Yarlo"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "CREATE_LABEL",
+                      "properties": {
+                        "Label": "Cutscene"
+                      }
+                    },
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Ah, Young man, How\u0027s the redecoration coming on?",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_UNTIL_GAME_TICK"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "I\u0027ve finished removing all the old furniture",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Jolly good young man",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "I used to be a carpenter myself...",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "GO_TO_LABEL",
+                          "properties": {
+                            "Label": "Cutscene"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "800",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "GO_TO_LABEL",
+                          "properties": {
+                            "Label": "Cutscene"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "800",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "GO_TO_LABEL",
+                          "properties": {
+                            "Label": "Cutscene"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "800",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "GO_TO_LABEL",
+                          "properties": {
+                            "Label": "Cutscene"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "800",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1800",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "1300",
+                        "Variance": "380"
+                      }
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "11800",
+                                    "Variance": "380"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Now, about my furniture..",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Some basic wooden planks and nails should do,",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "I\u0027ll want a new carpet too.",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "The bed? Artisan",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Those crates in the kitchen.",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Take 3 logs",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "I think that\u0027s everything.",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_CUTSCENE",
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "800",
+                            "Variance": "380"
+                          }
+                        },
+                        {
+                          "id": "GO_TO_LABEL",
+                          "properties": {
+                            "Label": "Cutscene"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_IN_DIALOGUE",
+                      "customDisplayName": "Catch dialogue",
+                      "children": [
+                        {
+                          "id": "IF_CAN_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SPACEBAR_TO_CONTINUE",
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "980",
+                                    "Variance": "280"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Building Crew"
+              },
+              "children": [
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Crates",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3247, 3401, 0),(3247, 3395, 0),(3240, 3395, 0),(3240, 3402, 0)"
+                        },
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "ID",
+                          "operator": "EQUALS",
+                          "value": "40214"
+                        }
+                      ]
+                    },
+                    "Action": "Search"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "1940",
+                                "Variance": "340"
+                              },
+                              "children": [
+                                {
+                                  "id": "IF_TAB_IS_NOT_OPEN",
+                                  "properties": {
+                                    "Tab": {
+                                      "class": "Tab",
+                                      "value": "INVENTORY"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "OPEN_TAB",
+                                      "properties": {
+                                        "Tab": {
+                                          "class": "Tab",
+                                          "value": "INVENTORY"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "WALK_FULLY_TO_TILE",
+                                  "properties": {
+                                    "Tile": "3303, 3489, 0"
+                                  }
+                                },
+                                {
+                                  "id": "SLEEP_UNTIL_GAME_TICK",
+                                  "children": [
+                                    {
+                                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                      "properties": {
+                                        "Mean": "440",
+                                        "Variance": "90"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "NPC_INTERACT",
+                  "properties": {
+                    "Action": "Talk-to",
+                    "Filter NPC By": {
+                      "class": "NPC",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Sawmill operator"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "980",
+                        "Variance": "280"
+                      }
+                    },
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "IF_IN_DIALOGUE",
+                              "customDisplayName": "Do you want some planks son?",
+                              "children": [
+                                {
+                                  "id": "IF_CAN_CONTINUE",
+                                  "children": [
+                                    {
+                                      "id": "SPACEBAR_TO_CONTINUE",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "980",
+                                            "Variance": "280"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "IF_IN_DIALOGUE",
+                              "customDisplayName": "Waxwood Sir!",
+                              "children": [
+                                {
+                                  "id": "IF_CAN_CONTINUE",
+                                  "children": [
+                                    {
+                                      "id": "SPACEBAR_TO_CONTINUE",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "980",
+                                            "Variance": "280"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "IF_OPTIONS_ARE_AVAILABLE",
+                                  "children": [
+                                    {
+                                      "id": "CHOOSE_OPTION_BY_INDEX",
+                                      "properties": {
+                                        "Index": "1"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "IF_IN_DIALOGUE",
+                              "customDisplayName": "Waxwood for Yarlo",
+                              "children": [
+                                {
+                                  "id": "IF_CAN_CONTINUE",
+                                  "children": [
+                                    {
+                                      "id": "SPACEBAR_TO_CONTINUE",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "980",
+                                            "Variance": "280"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "IF_IN_DIALOGUE",
+                              "customDisplayName": "Ol Bud? It\u0027s free.",
+                              "children": [
+                                {
+                                  "id": "IF_CAN_CONTINUE",
+                                  "children": [
+                                    {
+                                      "id": "SPACEBAR_TO_CONTINUE",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "980",
+                                            "Variance": "280"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "IF_IN_DIALOGUE",
+                              "customDisplayName": "Catch Dialogue",
+                              "children": [
+                                {
+                                  "id": "IF_CAN_CONTINUE",
+                                  "children": [
+                                    {
+                                      "id": "SPACEBAR_TO_CONTINUE",
+                                      "children": [
+                                        {
+                                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                          "properties": {
+                                            "Mean": "980",
+                                            "Variance": "280"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "SET_VARIABLE",
+                              "properties": {
+                                "Value": "1",
+                                "Variable name": "Woodwaxed"
+                              }
+                            },
+                            {
+                              "id": "GO_TO_LABEL",
+                              "properties": {
+                                "Label": "Woodwaxed Return"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "980",
+                            "Variance": "280"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Get to work"
+              },
+              "children": [
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Chair hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3245, 3396, 0),(3245, 3390, 0),(3238, 3390, 0),(3238, 3397, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "680",
+                                "Variance": "280"
+                              }
+                            },
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Carpet hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3245, 3397, 0),(3245, 3391, 0),(3238, 3391, 0),(3238, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Table hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3244, 3397, 0),(3244, 3391, 0),(3237, 3391, 0),(3237, 3398, 0)"
+                        },
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "TILE",
+                          "operator": "EQUALS",
+                          "value": "(3240, 3394, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Bed hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3245, 3400, 0),(3245, 3394, 0),(3238, 3394, 0),(3238, 3401, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Stool hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3243, 3397, 0),(3243, 3391, 0),(3236, 3391, 0),(3236, 3398, 0)"
+                        },
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "TILE",
+                          "operator": "EQUALS",
+                          "value": "(3239, 3394, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Table hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3249, 3397, 0),(3249, 3391, 0),(3242, 3391, 0),(3242, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "SLEEP_NORMAL_DISTRIBUTION",
+                      "properties": {
+                        "Mean": "980",
+                        "Variance": "280"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "GAME_OBJECT_INTERACT",
+                  "properties": {
+                    "Filter Object By": {
+                      "class": "GameObject",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Stool hotspot",
+                      "filters": [
+                        {
+                          "class": "GameObject",
+                          "logic": "AND",
+                          "type": "IN_AREA",
+                          "operator": "EQUALS",
+                          "value": "(3248, 3397, 0),(3248, 3391, 0),(3241, 3391, 0),(3241, 3398, 0)"
+                        }
+                      ]
+                    },
+                    "Action": "Build"
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK",
+                          "children": [
+                            {
+                              "id": "TYPE_MESSAGE_WITHOUT_ENTER",
+                              "properties": {
+                                "Message": "1"
+                              },
+                              "children": [
+                                {
+                                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                                  "properties": {
+                                    "Mean": "5680",
+                                    "Variance": "700"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "980",
+                    "Variance": "280"
+                  }
+                },
+                {
+                  "id": "IF_FIRST_RUN",
+                  "children": [
+                    {
+                      "id": "GO_TO_LABEL",
+                      "properties": {
+                        "Label": "Get to work"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CREATE_LABEL",
+              "properties": {
+                "Label": "Final talk with Yarlo"
+              },
+              "children": [
+                {
+                  "id": "NPC_INTERACT",
+                  "properties": {
+                    "Action": "Talk-to",
+                    "Filter NPC By": {
+                      "class": "NPC",
+                      "logic": "NONE",
+                      "type": "NAME",
+                      "operator": "EQUALS",
+                      "value": "Old Man Yarlo"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "SLEEP_WHILE_MOVING",
+                      "children": [
+                        {
+                          "id": "SLEEP_UNTIL_GAME_TICK"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "My boy rewarded you yet?",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "Not yet, soon.",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "You should, you\u0027ve earned it!",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "customDisplayName": "Catch Dialogue",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "SET_VARIABLE",
+                  "properties": {
+                    "Value": "1",
+                    "Variable name": "Job"
+                  },
+                  "children": [
+                    {
+                      "id": "GO_TO_LABEL",
+                      "properties": {
+                        "Label": "Daddy\u0027s Home Start"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CREATE_LABEL",
+          "properties": {
+            "Label": "The End"
+          },
+          "children": [
+            {
+              "id": "NPC_INTERACT",
+              "properties": {
+                "Force left click": false,
+                "Action": "Talk-to",
+                "Filter NPC By": {
+                  "class": "NPC",
+                  "logic": "NONE",
+                  "type": "NAME",
+                  "operator": "EQUALS",
+                  "value": "Marlo",
+                  "filters": [
+                    {
+                      "class": "NPC",
+                      "logic": "OR",
+                      "type": "ID",
+                      "operator": "EQUALS",
+                      "value": "10429"
+                    }
+                  ]
+                }
+              },
+              "children": [
+                {
+                  "id": "SLEEP_WHILE_MOVING"
+                },
+                {
+                  "id": "SLEEP_UNTIL_GAME_TICK"
+                },
+                {
+                  "id": "SLEEP_NORMAL_DISTRIBUTION",
+                  "properties": {
+                    "Mean": "1980",
+                    "Variance": "480"
+                  }
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "980",
+                            "Variance": "280"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "1980",
+                                "Variance": "380"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "IF_IN_DIALOGUE",
+                  "children": [
+                    {
+                      "id": "CHOOSE_OPTION_BY_INDEX",
+                      "properties": {
+                        "Index": "1"
+                      },
+                      "children": [
+                        {
+                          "id": "SLEEP_NORMAL_DISTRIBUTION",
+                          "properties": {
+                            "Mean": "1180",
+                            "Variance": "340"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_CAN_CONTINUE",
+                      "children": [
+                        {
+                          "id": "SPACEBAR_TO_CONTINUE",
+                          "children": [
+                            {
+                              "id": "SLEEP_NORMAL_DISTRIBUTION",
+                              "properties": {
+                                "Mean": "980",
+                                "Variance": "280"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IF_INVENTORY_CONTAINS_ANY",
+                      "properties": {
+                        "Filter Item By": {
+                          "class": "Item",
+                          "logic": "NONE",
+                          "type": "ID",
+                          "operator": "EQUALS",
+                          "value": "24940"
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "IF_MOUSE_IS_ON_SCREEN",
+                          "children": [
+                            {
+                              "id": "MOVE_MOUSE_OFFSCREEN"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "SEND_WEBHOOK_MESSAGE_WITH_SCREENSHOT",
+                          "properties": {
+                            "Message": "Miniquest Completed Successfully.",
+                            "URL": ""
+                          },
+                          "children": [
+                            {
+                              "id": "SLEEP_BETWEEN",
+                              "properties": {
+                                "Minimum": "7500",
+                                "Maximum": "25000"
+                              }
+                            },
+                            {
+                              "id": "LOGOUT",
+                              "children": [
+                                {
+                                  "id": "STOP_SCRIPT"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PAINT_ROOT",
+      "properties": {
+        "Hide standard paint": true
+      },
+      "children": [
+        {
+          "id": "DRAW_USERNAME_CENSOR_BAR"
+        },
+        {
+          "id": "DRAW_IMAGE",
+          "properties": {
+            "Path": "C:\\Users\\Gary Gilbert\\DreamBot\\Scripts\\Pandemic\u0027s Script Creator\\files\\Mammoth.jpg",
+            "X": "10",
+            "Y": "340"
+          }
+        },
+        {
+          "id": "DRAW_TEXT",
+          "properties": {
+            "X": "4",
+            "Font Size": "36",
+            "Y": "370",
+            "Text": "Mammoth",
+            "Font": {
+              "class": "Font",
+              "value": "Dialog"
+            },
+            "Color": {
+              "class": "Color",
+              "value": -16712705
+            }
+          }
+        },
+        {
+          "id": "DRAW_TEXT",
+          "properties": {
+            "X": "14",
+            "Font Size": "38",
+            "Y": "405",
+            "Text": "Daddy\u0027s Home",
+            "Font": {
+              "class": "Font",
+              "value": "Dialog"
+            },
+            "Color": {
+              "class": "Color",
+              "value": -16712705
+            }
+          }
+        },
+        {
+          "id": "DRAW_TEXT",
+          "properties": {
+            "X": "16",
+            "Font Size": "38",
+            "Y": "405",
+            "Text": "Daddy\u0027s Home",
+            "Font": {
+              "class": "Font",
+              "value": "Dialog"
+            },
+            "Color": {
+              "class": "Color",
+              "value": -196611
+            }
+          }
+        },
+        {
+          "id": "DRAW_TEXT",
+          "properties": {
+            "X": "375",
+            "Y": "470",
+            "Text": "Run time: runtime()",
+            "Font": {
+              "class": "Font",
+              "value": "Inter V"
+            },
+            "Color": {
+              "class": "Color",
+              "value": -16712705
+            }
+          }
+        },
+        {
+          "id": "DRAW_TEXT",
+          "properties": {
+            "Font Size": "16",
+            "X": "",
+            "Y": "470",
+            "Text": "\u003estatus()",
+            "Font": {
+              "class": "Font",
+              "value": "Dialog"
+            },
+            "Color": {
+              "class": "Color",
+              "value": -16712705
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
